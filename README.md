@@ -33,3 +33,17 @@ sudo usermod -aG docker $USER
 docker --version
 docker compose version
 sudo docker run --rm hello-world
+
+
+
+# 运行nginx和portainer
+
+mkdir -p nginx/html
+cat > nginx/html/index.html <<'EOF'
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>It works</title></head>
+<body><h1>Hello from Nginx in Docker!</h1></body></html>
+EOF
+
+# 拉起
+docker compose up -d
