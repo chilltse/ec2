@@ -1,4 +1,4 @@
-## install docker and docker compse
+## 傻逼草泥马 install docker and docker compse
 # 0) 卸载可能的旧包（安全起见）
 sudo apt-get remove -y docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc || true
 
